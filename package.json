@@ -3,12 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://tegalex15.github.io/sportplan/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "homepage": "https://tegalex15.github.io/sportplan/",
+    "deploy": "gh-pages -d dist",
     "electron:dev": "concurrently \"vite\" \"wait-on http://localhost:5173 && electron .\"",
     "electron:build": "npm run build && tsc -p tsconfig.electron.json && electron-builder --win portable"
   },
